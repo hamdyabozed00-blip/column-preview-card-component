@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
-  background-color: red;
+  background-color:  hsl(0, 0%, 95%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -101,13 +101,12 @@ body {
     display:flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    max-width: 327px;
-    width: 100%;
-    margin: 0 auto;
+    width: 100% !important;
+    max-width: 327px !important;
+    margin: 0 auto !important;
   }
   .card {
     width: 100%;
-    padding: 32px 24px;
     box-sizing: border-box;
   }
   .card p {
