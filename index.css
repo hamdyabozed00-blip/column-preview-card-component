@@ -96,6 +96,7 @@ body {
 @media (max-width: 768px) {
   body {
     padding: 40px 20px;
+    background-color: transparent;
   }
   .card-container {
     display:flex !important;
