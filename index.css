@@ -17,7 +17,7 @@ body {
 .card-container {
   display: flex;
   max-width: 920px;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -57,12 +57,14 @@ body {
 }
 
 .btn {
+  display: inline-block;
   background-color: hsl(0, 0%, 95%);
   padding: 12px 30px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+  border: 2px solid #f2f2f2;
 }
 
 .card--sedan .btn { color: hsl(31, 77%, 52%); }
@@ -71,6 +73,24 @@ body {
 
 .btn:hover {
   background-color: transparent;
-  color: hsl(0, 0%, 95%);
-  border: 2px solid hsl(0, 0%, 95%);
+  color: #ffffff !important;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+/* الدايرة الغامقة خلف السيارة */
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2); /* درجة غامقة شفافة تناسب كل الألوان */
+  border-radius: 50%; /* تجعل الحاوية دائرة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* أيقونة السيارة نفسها داخل الدايرة */
+.icon i {
+  font-size: 24px;
+  color: #ffffff; /* لون السيارة أبيض داخل الدايرة */
 }
