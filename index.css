@@ -1,111 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#f2f2f2;
-   
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+.card-container {
+  display: flex;
+  max-width: 920px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin-top: 200px;
-    
-}
-.card .card1,.card2,.card3 {
-    width: auto ;
-    background-color: #eee;
-    height: AUTO; 
-    padding: 50px;
-}
-.card .card1 {
-    background-color: rgba(226, 133, 37);
-}
-.card .icon i {
-    margin: 10px 25px;
-   
+  flex: 1;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.card .icon {
-    font-size: 25px;
-    color: #fcd477;
-    background-color: #b46a1e;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    
-   
-}
-.card .head h2 {
-    font-size: 30px;
-    padding-top: 40px;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-
-}
-.card .head p {
-    color: #f3bc7d;
-    padding-top: 40px;
-    line-height: 22px;
-    font-family: sans-serif;
-}
-.card .button  {
-    margin: 50px 0px;
-}
-.card .button a{
-    display: inline-block;
-    text-decoration: none;
-    background-color: white;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    padding: 13px;
-    border-radius: 20px;
-    transition: .3s ease;
-    font-weight: bold;
-    font-family: sans-serif;
-    
+/* Themes / Colors */
+.card--sedan {
+  background-color: hsl(31, 77%, 52%);
 }
 
-.card .button a:hover {
-    transform: scale(1.1);
-}
-.card1 .button a {
-    color: #b46a1e;  
-}
-.card2 .button a {
-    color: #89abaf;;  
-}
-.card3 .button a {
-    color: #45605d;  
-}
-.card .card2 {
-    background-color: #016972;
-}
-.card2 .icon  {
-   color: #2bb0bc;
-   background-color:#00545a;
-}
-.card2 .head p {
-    color: #47949e;
+.card--suv {
+  background-color: hsl(184, 100%, 22%);
 }
 
-.card .card3 {
-    background-color:#00403f;
+.card--luxury {
+  background-color: hsl(179, 100%, 13%);
 }
-.card3 .icon  {
-   color: #20a68e;
-   background-color:#033031;
+
+.card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 95%);
+  margin: 35px 0 25px 0;
 }
-.card3 .head p {
-    color: #76a5a5;
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card--sedan .btn { color: hsl(31, 77%, 52%); }
+.card--suv .btn { color: hsl(184, 100%, 22%); }
+.card--luxury .btn { color: hsl(179, 100%, 13%); }
+
+.btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
 }
