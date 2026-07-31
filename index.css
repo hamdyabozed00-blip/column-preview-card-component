@@ -81,16 +81,35 @@ body {
 .icon {
   width: 60px;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.2); /* درجة غامقة شفافة تناسب كل الألوان */
-  border-radius: 50%; /* تجعل الحاوية دائرة */
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
 }
-
-/* أيقونة السيارة نفسها داخل الدايرة */
 .icon i {
   font-size: 24px;
-  color: #ffffff; /* لون السيارة أبيض داخل الدايرة */
+  color: #ffffff; 
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    
+    max-width: 327px;
+    width: 100%;
+  }
+
+  .card {
+    padding: 32px 24px;
+  }
+
+  .card p {
+    margin-bottom: 40px;
+  }
 }
